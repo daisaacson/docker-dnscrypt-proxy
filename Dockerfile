@@ -1,4 +1,4 @@
-FROM alpine:3.18.2
+FROM alpine:3.18.5
 RUN apk --no-cache update && apk --no-cache upgrade && apk add --no-cache bash execline dnscrypt-proxy
 COPY docker-entrypoint.sh /usr/local/bin
 EXPOSE 53/tcp
